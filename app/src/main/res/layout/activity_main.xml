@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/hola"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+
+    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fillViewport="true"
+            >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="48dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:text="X1"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:text="X2"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Y1"
+                    android:textSize="30sp" />
+
+                <TextView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Y2"
+                    android:textSize="30sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/edit_text_black"
+                    android:layout_marginTop="35dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_x1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/ingrese" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/edit_text_black"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_x2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/ingrese" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/edit_text_black"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_y1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/ingrese" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/edit_text_black"
+                    android:layout_marginTop="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_y2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/ingrese" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+            <Button
+                android:theme="@style/RaisedButtonDark"
+                android:id="@+id/punto_medio"
+                android:layout_width="300sp"
+                android:layout_height="70dp"
+                android:text="@string/punto_medio"
+                android:elevation="100dp"/>
+            <Button
+                android:theme="@style/RaisedButtonDark"
+                android:id="@+id/pendiente"
+                android:layout_width="300sp"
+                android:layout_height="70dp"
+                android:text="@string/pendiente"
+                android:elevation="100dp"/>
+            <Button
+                android:theme="@style/RaisedButtonDark"
+                android:id="@+id/cuadrante"
+                android:layout_width="300sp"
+                android:layout_height="70dp"
+                android:text="@string/cuadrante"
+                android:elevation="100dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

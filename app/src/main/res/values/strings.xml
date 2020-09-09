@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">trabajo cuadrante</string>
+    <string name="ingrese">ingrese dato</string>
+    <string name="punto_medio">PUNTO MEDIO</string>
+    <string name="pendiente">PENDIENTE</string>
+    <string name="cuadrante">CUANDRANTE</string>
+    <string name="aleatorio">Aleatorio</string>
+    <string name="distancia">Distancia</string>
+    <string name="action_settings">configuraciones</string>
+
+</resources>
